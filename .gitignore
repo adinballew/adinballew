@@ -1,0 +1,7 @@
+.idea
+node_modules
+notes.txt
+
+# Elastic Beanstalk Files
+.elasticbeanstalk
+

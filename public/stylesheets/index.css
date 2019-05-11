@@ -1,0 +1,53 @@
+.banner {
+    padding-top: 1%;
+}
+
+.banner h2 {
+    border-bottom: solid thin;
+}
+
+.jumbotron {
+    background: #4717F6;
+    padding: 1em;
+}
+
+.btn-primary {
+    background-color: #4717F6;
+    border-color: #4717F6;
+}
+
+.btn-primary a {
+    color: #E7DFDD;
+}
+
+.center-block {
+    margin-left:auto;
+    margin-right:auto;
+    display:block;
+}
+
+.text-center {
+    text-align:center
+}
+
+.carousel {
+    height: 100%;
+    background: #0E0B16 no-repeat center center;
+    display: block;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-item img {
+    width: 300px;
+}
+
+.carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-control-next:hover, .carousel-control-prev:hover {
+    background-color: #0c0916;
+}

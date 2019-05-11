@@ -1,0 +1,29 @@
+<script type="text/javascript">
+    function extract()
+    {
+    	let completeName, firstName, lastName, spacePos, tempStr;
+
+    	completeName = document.form1.completeName.value;
+
+    	spacePos = completeName.indexOf(" ");
+    	firstName = completeName.substring(0, spacePos);
+    	lastName = completeName.substring(spacePos + 1);
+    	tempStr = "First Name " + firstName + "\n";
+    	tempStr = tempStr + "It contains " + firstName.length + " characters. \n\n";
+
+        tempStr = tempStr +  "Last Name " + lastName + "\n";
+        tempStr = tempStr + "It contains " + lastName.length + " characters. \n\n";
+
+        document.form1.myOutput.value = tempStr;
+    }
+</script>
+
+<h3>String Manipulation</h3>
+
+<form name="form1">
+    Name: <input type="text" name="completeName" size="30" value="Adin Ballew">
+    <p></p>
+    <input type="button" value="Extract Name" onclick="extract()">
+    <p></p>
+    <textarea name="myOutput" rows="8" cols="50"></textarea>
+</form>

@@ -1,0 +1,44 @@
+<script type="text/javascript">
+    function calculate()
+    {
+    	let num1, num2, num3, total;
+    	num1 = parseFloat(document.form1.housing.value);
+        num2 = parseFloat(document.form1.tuition.value);
+        num3 = parseFloat(document.form1.books.value);
+
+        total = num1 + num2 + num3;
+        document.form1.total.value = "$" + total;
+    }
+</script>
+
+<h3> College Expense Calculator</h3>
+
+<form name="form1">
+    <table>
+        <tr>
+            <td align="right">
+                Housing: <input type="text" name="housing" size="10" value="">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Tuition: <input type="text" name="tuition" size="10" value="">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Books: <input type="text" name="books" size="10" value="">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                Total: <input type="text" name="total" size="10" value="">
+            </td>
+        </tr>
+        <tr>
+            <td align="right">
+                <input type="button" value="Calculate Total" onclick="calculate()">
+            </td>
+        </tr>
+    </table>
+</form>
