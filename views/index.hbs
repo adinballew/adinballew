@@ -2,66 +2,10 @@
 <div class="container">
     <div class="row">
         <div class="col-md-3">
-            <br>
-            <img style="border-radius: 50%" src="images/profile.jpg">
-            <br>
-            <br>
-            <h3 style="text-align: left">About</h3>
-            <hr>
-            <p>Full-Stack Software Developer with 2 years' experience working in a fast-moving startup environment.</p>
-            <h4>Skills</h4>
-            <hr>
-            <ul style="list-style-type: none; padding: 0">
-                <li>Object Oriented Programming</li>
-                <li>Front-end Development</li>
-                <li>Back-end Development</li>
-                <li>Relational Databases</li>
-                <li>Cloud Services</li>
-            </ul>
-            <h4>Info</h4>
-            <hr>
-            <ul style="list-style-type: none; padding: 0">
-                <li><a href="files/Adin%20Ballew%20Resume.docx">Resume</a></li>
-                <li><a href="https://github.com/adinballew">Github</a></li>
-            </ul>
+            {{>home-left}}
         </div>
         <div class="col-md-9">
-            <br>
-            <div class="jumbotron">
-                <h1>Projects</h1>
-            </div>
-            <button class="btn btn-primary">
-                <a href="https://github.com/adinballew/ACPi">ACPi</a>
-            </button>
-            <hr>
-            <p>
-                Smart Thermostat Raspberry Pi Application
-                that uses the GPIO pins to operate a 4 Channel Relay
-            </p>
-            <button class="btn btn-primary">
-                <a href="https://github.com/adinballew/IMDB_RSS">IMDB_RSS</a>
-            </button>
-            <hr>
-            <p>
-                A Jupyter Notebook that queries a RSS Feed to get Movies,
-                Queries a Movie Database for ratings, and plots the movies
-                in a Matplotlib.
-            </p>
-            <button class="btn btn-primary">
-                <a href="https://github.com/adinballew/TheBratCrew">Demo Website</a>
-            </button>
-            <hr>
-            <p>
-                A Demo Website I build for a friend's Vape Company.
-            </p>
-            <button class="btn btn-primary">
-                <a href="https://github.com/adinballew/Clippy">Clippy</a>
-            </button>
-            <hr>
-            <p>
-                A work in progress that will store Clipboard data and have
-                useful features for manipulating that data.
-            </p>
+            {{>home-right}}
         </div>
     </div>
 </div>

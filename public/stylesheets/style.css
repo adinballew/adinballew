@@ -1,20 +1,26 @@
-html, body {
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+html {
     height: 100%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
 }
 
 body {
     background-size: cover;
     background: #0E0B16 no-repeat fixed center center;
+    color: #E7DFDD;
+    font-family: "Montserrat", monospace;
+    font-size: 20px;
     position: relative;
     overflow-x: hidden;
-    color: #E7DFDD;
-    font-family: "Times New Roman", monospace; /* TODO: Use google fonts https://fonts.google.com/ */
-    font-size: 20px;
-
-}
-
-html > body #wrapper {
-    height: auto;
+    min-height: 100%;
+    padding-bottom: 50px;
 }
 
 hr {

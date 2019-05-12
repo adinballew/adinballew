@@ -1,49 +1,21 @@
+/**Navbar**/
 .navbar {
     height: 100%;
-    /* TODO: Change navbar background */
     background-size: 200%;
-    background: #4717F6;
-}
-
-.dropdown-menu {
-    position: absolute;
-    align-content: flex-end!important;
-}
-
-.dropdown-menu, .dropdown-menu.show, .dropdown-item {
-    background: #4717F6;
+    background: #000000;
+    border-bottom: 1px solid #181818;
+    border-right: 1px solid #181818;
 }
 
 .navbar a {
-    text-decoration: none;
     color: #E7DFDD;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
 }
 
-nav {
-    white-space: nowrap;
-}
-
-nav ul {
-    display: inline-block;
-    *display: inline; /* IE7 */
-    *zoom: 1; /* IE7 */
-    list-style: none;
-    width: 100%;
-}
-
-nav li {
-    display: inline-block;
-    *display: inline;
-    *zoom: 1;
-    text-align: center;
-    margin-left: -4px;
-    margin-right: 5px;
-}
-
+/**Navbar Items**/
 nav li:hover {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 nav li:first-child {
@@ -54,30 +26,31 @@ nav .form-inline {
     display: inline-block;
 }
 
-nav .btn, .modal .btn {
-    border: thin solid #333333;
-    letter-spacing: 1px;
-}
-
-nav .btn:focus, nav .btn:active:focus,
-.modal .btn:focus, .modal .btn:active:focus {
-    outline: 0 none;
-}
-
-nav .btn-primary, .modal .btn-primary {
+/**Navbar Buttons**/
+nav .btn-primary {
+    background: #000000;
     color: #E7DFDD;
+}
+
+nav .btn-primary:hover, nav .btn-primary:focus, nav .btn-primary:active, nav .btn-primary.active {
+    background: #181D35;
+}
+
+nav .btn-primary:active, nav .btn-primary.active {
     background: #4717F6;
 }
 
-nav .btn-primary:hover, nav .btn-primary:focus, nav .btn-primary:active, nav .btn-primary.active,
-.modal .btn-primary:hover, .modal .btn-primary:focus, .modal .btn-primary:active, .modal .btn-primary.active,
-.open > .dropdown-toggle.btn-primary {
-    color: #ed1c24;
-    background: #4717F6;
+/**Dropdown Menu**/
+.dropdown-menu {
+    position: absolute;
+    align-content: flex-end !important;
 }
 
-nav .btn-primary:active, nav .btn-primary.active,
-.modal .btn-primary:active, .modal .btn-primary.active {
-    background: #4717F6;
-    box-shadow: none;
+.dropdown-menu, .dropdown-menu.show, .dropdown-item {
+    background: #0a0a14;
+}
+
+/**Navbar Toggler**/
+.navbar-toggler-icon {
+    background-image: url("../images/icons/menu.png");
 }

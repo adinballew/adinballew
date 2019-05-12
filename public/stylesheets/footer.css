@@ -1,0 +1,24 @@
+footer {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: inline-flex;
+    justify-content: center;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+footer ul li {
+    float: left;
+}
+
+footer ul li a {
+    text-align: center;
+    padding: 4px;
+}
