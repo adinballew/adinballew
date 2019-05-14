@@ -21,4 +21,10 @@ footer ul li {
 footer ul li a {
     text-align: center;
     padding: 4px;
+    color: #E7DFDD;
+}
+
+footer ul li a:hover {
+    text-decoration: none;
+    color: #181D35;
 }

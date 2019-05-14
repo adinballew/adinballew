@@ -46,3 +46,7 @@
 .btn-primary a {
     color: #E7DFDD;
 }
+
+.btn-primary a:hover {
+    text-decoration: none;
+}

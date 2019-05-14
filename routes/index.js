@@ -12,5 +12,4 @@ router.get('/interests', function (req, res, next)
 	res.render('interests', {});
 });
 
-
 module.exports = router;
