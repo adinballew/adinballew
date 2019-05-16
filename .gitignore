@@ -1,5 +1,5 @@
-.idea
-node_modules
+.idea/
+node_modules/
 package-lock.json
 public/stylesheets/*.css
 public/stylesheets/*.css.map
