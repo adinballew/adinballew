@@ -16,9 +16,11 @@
     "express-hbs": "^1.0.4",
     "express-session": "^1.15.6",
     "handlebars-intl": "^1.1.2",
+    "jquery": "^3.4.1",
     "morgan": "~1.9.0",
     "node-sass-middleware": "^0.11.0",
     "pg-promise": "^6.10.3",
+    "popper.js": "^1.14.7",
     "serve-favicon": "~2.4.5",
     "underscore": "latest"
   },
