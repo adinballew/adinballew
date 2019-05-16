@@ -1,7 +1,7 @@
 .idea
 node_modules
 package-lock.json
-*.zip
-notes.txt
+public/stylesheets/*.css
+public/stylesheets/*.css.map
 # Elastic Beanstalk Files
 .elasticbeanstalk

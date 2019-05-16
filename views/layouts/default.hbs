@@ -10,12 +10,18 @@
     {{>css}}
 </head>
 <body>
-<div id="wrapper" class="container" id="main-container">
+<div class="night">
+    {{#each array}}
+        <div class="shooting_star"></div>
+    {{/each}}
+</div>
+<div id="wrapper" class="container">
     {{>header}}
     {{>navbar}}
     {{{body}}}
-    {{>footer}}
+    <div class="push"></div>
 </div>
+{{>footer}}
 {{>js}}
 </body>
 </html>

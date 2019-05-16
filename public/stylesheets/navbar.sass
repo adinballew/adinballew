@@ -1,0 +1,46 @@
+$color_1: #E7DFDD
+$background_color_1: #0c0916
+$background_color_2: #4717F6
+$border_color_1: #4717F6
+$hover_active: #181D35
+
+nav
+  height: 100%
+  background-size: 200%
+  background: #000000
+  border-bottom: 1px solid #181818
+  border-right: 1px solid #181818
+  li
+    &:hover
+      text-decoration: none
+    &:first-child
+      margin-left: 0
+    .btn:focus, .btn:active:focus, .btn.active:focus
+      outline: 0 none
+    .btn-primary
+      background: #000000
+      color: $color_1
+      &:hover, &:focus, &:active, &.active, .open > .dropdown-toggle.btn-primary
+        background: $hover_active
+      &:active, &.active
+        background: $background_color_1
+        box-shadow: none
+    a
+      color: $color_1
+      transition: all 0.5s
+      -webkit-transition: all 0.5s
+
+.navbar-toggler-icon
+  background-image: url("../images/icons/menu.png")
+
+.dropdown-menu
+  position: absolute
+  align-content: flex-end !important
+  background: #0a0a14
+
+.dropdown-menu.show
+  background: #0a0a14
+
+.dropdown-item
+  background: #0a0a14
+
