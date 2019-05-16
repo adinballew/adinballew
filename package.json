@@ -18,6 +18,7 @@
     "handlebars-intl": "^1.1.2",
     "jquery": "^3.4.1",
     "morgan": "~1.9.0",
+    "node-sass": "^4.12.0",
     "node-sass-middleware": "^0.11.0",
     "pg-promise": "^6.10.3",
     "popper.js": "^1.14.7",
