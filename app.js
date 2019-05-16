@@ -31,7 +31,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.use(favicon(path.join(__dirname, 'public', '/images/icons/favicon.ico')));
 app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist/'));
 app.use('/font-awesome', express.static(__dirname + '/node_modules/@fortawesome/fontawesome-free/'));
-app.use(logger('dev'));
+// app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(cookieParser());
