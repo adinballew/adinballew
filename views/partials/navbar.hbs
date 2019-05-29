@@ -1,16 +1,28 @@
 <nav class="navbar navbar-toggleable-sm navbar-expand-md">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
-            aria-label="Toggle navigation"><span class="navbar-toggler-icon" ></span>
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarsExampleDefault">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link btn-primary" href="/">Home<span class="sr-only">(current)</span></a>
+            <li {{#is title "Home"}} class="active" {{/is}}>
+                <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link btn-primary" href="interests">Interests</a>
+            <li {{#is title "About"}} class="active" {{/is}}>
+                <a class="nav-link" href="/about">About</a>
+            </li>
+            <li {{#is title "Projects"}} class="active" {{/is}}>
+                <a class="nav-link" href="/projects">Projects</a>
+            </li>
+            <li {{#is title "Contact"}} class="active" {{/is}}>
+                <a class="nav-link" href="/contact">Contact</a>
             </li>
         </ul>
+        <div class="dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Files</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="files/Resume.docx">R&eacute;sum&eacute;</a>
+            </div>
+        </div>
     </div>
 </nav>

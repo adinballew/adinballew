@@ -1,0 +1,38 @@
+[
+  {
+	"Name": "Python",
+	"Metric": 80
+  },
+  {
+	"Name": "Java",
+	"Metric": 80
+  },
+  {
+	"Name": "C++",
+	"Metric": 70
+  },
+  {
+	"Name": "HTML",
+	"Metric": 90
+  },
+  {
+	"Name": "Javascript",
+	"Metric": 80
+  },
+  {
+	"Name": "Node.js",
+	"Metric": 70
+  },
+  {
+	"Name": "Photoshop",
+	"Metric": 60
+  },
+  {
+	"Name": "RDS",
+	"Metric": 90
+  },
+  {
+	"Name": "AWS",
+	"Metric": 80
+  }
+]

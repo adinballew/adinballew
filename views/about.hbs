@@ -1,0 +1,83 @@
+{{!< default}}
+<div id="about" class="container-fluid">
+    <div id="body-header">
+        <div class="body-header-text">About</div>
+        <div class="body-header-bar"></div>
+    </div>
+    <div class="row top-row">
+        <div class="col-md-5 col-sm-6 col-6">
+            <div class="about-me">
+                <img class="picture" src="images/profile.jpg" alt="profile">
+                <div class="description-header">"Who Am I?"</div>
+                <div class="description">
+                    <span>
+                        I'm Full-Stack Developer. I have 2 years' experience in start-up environment. I'm passionate about
+                        Back-End technologies coming to life in elegant Front-End UI's
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-7 col-sm-6 col-6">
+            <div class="graph">
+                {{#each skills}}
+                    <div class="skill">
+                        <div class="skill-fill">
+                            <div style="width: {{this.Metric}}%" class="metric"><span>{{this.Name}}</span></div>
+                            <span>{{this.Metric}}%</span>
+                        </div>
+                    </div>
+                {{/each}}
+            </div>
+        </div>
+    </div>
+    <div class="row bottom-row">
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="bullet">
+                <div class="circle">
+                    <span><i class="fas fa-code"></i></span>
+                </div>
+            </div>
+            <div class="bullet-description">
+                <div class="description-text">
+                    Code Style is always clean and easy to understand.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="bullet">
+                <div class="circle">
+                    <span><i class="fas fa-fast-forward"></i></span>
+                </div>
+            </div>
+            <div class="bullet-description">
+                <div class="description-text">
+                    Loading time is extremely important to me.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="bullet">
+                <div class="circle">
+                    <span><i class="fas fa-brain"></i></span>
+                </div>
+            </div>
+            <div class="bullet-description">
+                <div class="description-text">
+                    I'm always learning and improving.
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-6 col-6">
+            <div class="bullet">
+                <div class="circle">
+                    <span><i class="fas fa-seedling"></i></span>
+                </div>
+            </div>
+            <div class="bullet-description">
+                <div class="description-text">
+                    My UI's will come to life before your eyes.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

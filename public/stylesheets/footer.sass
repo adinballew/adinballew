@@ -8,20 +8,28 @@ $hover_active: #181D35
 .push
   height: 40px
 
+@media (max-width: 767px)
+  .push
+    height: 225px
+
 footer
   display: flex
   justify-content: center
+
   ul
     list-style-type: none
     margin: 0
     padding: 0
     overflow: hidden
+
     li
       float: left
+
       a
         text-align: center
         padding: 4px
         color: $color_1
+
         &:hover
           text-decoration: none
           color: $hover_active

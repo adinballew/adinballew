@@ -1,8 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat')
+@import "background.sass"
+@import "navbar.sass"
+@import "index.sass"
+@import "about.sass"
+@import "projects.sass"
+@import "footer.sass"
+
 $color_1: #E7DFDD
 $background_color_1: #0c0916
 $background_color_2: #4717F6
 $border_color_1: #4717F6
+$hover_active: #181D35
 
 // Layout
 html, body
@@ -34,6 +42,7 @@ hr
 
 .carousel-item
   height: 100%
+
   img
     width: 300px
 
@@ -47,3 +56,43 @@ hr
 .carousel-control-prev
   &:hover
     background-color: $background_color_1
+
+.sr-only
+  background: $hover_active
+
+a.button
+  margin-top: 1em
+  text-decoration: none
+  text-transform: uppercase
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 60px
+  width: 150px
+  border: 1px solid $color_1
+  border-radius: 10px
+
+  span
+    color: $color_1
+    font-size: 28px
+    font-weight: 500
+  &:hover
+    background: #181D35
+
+a.button-small
+  text-decoration: none
+  text-transform: uppercase
+  display: flex
+  justify-content: center
+  align-items: center
+  height: 45px
+  width: 125px
+  border: 1px solid $color_1
+  border-radius: 10px
+
+  span
+    color: $color_1
+    font-size: small
+    font-weight: 500
+  &:hover
+    background: #181D35

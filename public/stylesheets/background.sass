@@ -3,6 +3,7 @@ $fuschia: #A239CA
 
 .night
   transform: rotateZ(-90deg)
+  z-index: -1
   position: absolute
   top: 100%
   left: 0
@@ -14,6 +15,7 @@ $fuschia: #A239CA
   border-radius: 999px
   filter: drop-shadow(0 0 5px #B939E1)
   animation: tail $shooting-time ease-in-out infinite, shooting $shooting-time ease-in-out infinite
+
   &::before
     content: ''
     position: absolute
@@ -23,6 +25,7 @@ $fuschia: #A239CA
     background: linear-gradient(-45deg, rgba(0, 0, 255, 0), $fuschia, rgba(0, 0, 255, 0))
     transform: translateX(50%) rotateZ(45deg)
     border-radius: 999px
+
   &::after
     @extend ::before
     transform: translateX(50%) rotateZ(-45deg)
@@ -33,6 +36,7 @@ $fuschia: #A239CA
       top: random(100) - 0vw
       left: random(100) - 0vh
       animation-delay: $delay
+
       &::before,
       &::after
         animation-delay: $delay
