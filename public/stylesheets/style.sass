@@ -4,6 +4,7 @@
 @import "index.sass"
 @import "about.sass"
 @import "projects.sass"
+@import "contact.sass"
 @import "footer.sass"
 
 $color_1: #E7DFDD
@@ -76,8 +77,9 @@ a.button
     color: $color_1
     font-size: 28px
     font-weight: 500
+
   &:hover
-    background: #181D35
+    background: rgba(0, 1, 0, .5)
 
 a.button-small
   text-decoration: none
@@ -85,14 +87,16 @@ a.button-small
   display: flex
   justify-content: center
   align-items: center
-  height: 45px
-  width: 125px
-  border: 1px solid $color_1
+  height: 44px
+  width: 124px
+  border: 2px solid $color_1
   border-radius: 10px
 
   span
     color: $color_1
     font-size: small
     font-weight: 500
+
   &:hover
-    background: #181D35
+    text-decoration: underline $color_1
+    background: rgba(0, 1, 0, .5)

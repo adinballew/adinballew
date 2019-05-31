@@ -2,7 +2,90 @@ $color_1: #E7DFDD
 $background_color_1: #0c0916
 $background_color_2: #4717F6
 $border_color_1: #4717F6
+$amount: 50%
 
-.jumbotron
-  background: $background_color_2
-  padding: 1em
+#projects
+  .row
+    margin-top: 1em
+
+    .project
+      display: flex
+      align-content: center
+      justify-content: center
+
+      .project-link
+        position: relative
+        width: 100%
+        height: 100%
+        max-width: 525px
+
+        .project-image
+          border: 1px solid #181818
+          width: inherit
+          height: auto
+          max-width: 100%
+
+        .overlay
+          position: absolute
+          top: 0
+          left: 0
+          width: inherit
+          height: inherit
+          max-height: 100%
+          background: rgba(0, 0, 0, 0)
+          transition: background 0.5s ease
+
+        &:hover .overlay
+          display: block
+          background: rgba(0, 0, 0, 0.7)
+
+        .button-container
+          position: absolute
+          left: 50%
+          top: 50%
+          a.button-small
+            position: relative
+            display: none
+            left: -50%
+            top: -50%
+            opacity: 0
+            transition: opacity .35s ease
+
+        &:hover .button-container .button-small
+          display: flex
+          opacity: 1
+
+
+    .project-description
+      margin-top: 0.5em
+      text-align: center
+
+      span
+        font-size: 0.8em
+
+.top-row
+  .left-col
+    animation: slide-left 1s ease-in
+
+  .right-col
+    animation: slide-right 1s ease-in
+
+.bottom-row
+  .left-col
+    animation: slide-left 1s ease-in
+
+  .right-col
+    animation: slide-right 1s ease-in
+
+
+@keyframes slide-left
+  0%
+    transform: translateX(-50vw)
+  100%
+    transform: translateX(0)
+
+@keyframes slide-right
+  0%
+    transform: translateX(50vw)
+  100%
+    transform: translateX(0)
