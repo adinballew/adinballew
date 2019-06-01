@@ -3,7 +3,6 @@ const router = express.Router();
 const nodeMailer = require("nodemailer");
 
 const skills = require('../model/skills');
-const mailsender = require('../model/mailsender');
 
 let arr = [];
 for (let i = 0; i < 20; i++)
@@ -39,8 +38,8 @@ router.post('/send-email', function (req, res)
 		port: 465,
 		secure: true,
 		auth: {
-			user: mailsender.user,
-			pass: mailsender.pass
+			user: process.env.user,
+			pass: process.env.pass
 		}
 	});
 
