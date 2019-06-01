@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const nodeMailer = require("nodemailer");
+
 const skills = require('../model/skills');
 const mailsender = require('../model/mailsender');
 
@@ -42,15 +43,20 @@ router.post('/send-email', function (req, res)
 			pass: mailsender.pass
 		}
 	});
+
 	let mailOptions = {
 		to: 'adinballew@gmail.com',
-		subject: req.body.subject,
-		body: req.body.message
+		subject: "Portfolio Contact",
+		html: "<h1>" + req.body.name + "</h1>" +
+			"<h3>" + req.body.email + "</h3>" +
+			"<p>" + req.body.message + "</p>"
 	};
 	transporter.sendMail(mailOptions, (error, info) =>
 	{
 		if (error)
+		{
 			return console.log(error);
+		}
 		console.log('Message %s sent: %s', info.messageId, info.response);
 	});
 	res.writeHead(301, {Location: '/contact'});

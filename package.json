@@ -3,32 +3,31 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node ./bin/www"
+	"start": "node ./bin/www"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.8.2",
-    "bluebird": "^3.5.1",
-    "body-parser": "~1.18.2",
-    "bootstrap": "^4.3.1",
-    "cookie-parser": "~1.4.3",
-    "debug": "~2.6.9",
-    "express": "^4.16.4",
-    "express-hbs": "^1.0.4",
-    "express-session": "^1.15.6",
-    "handlebars-helpers": "latest",
-    "handlebars-intl": "^1.1.2",
-    "jquery": "^3.4.1",
-    "morgan": "~1.9.0",
-    "node-sass": "^4.12.0",
-    "node-sass-middleware": "^0.11.0",
-    "nodemailer": "^6.2.1",
-    "pg-promise": "^6.10.3",
-    "popper.js": "^1.14.7",
-    "serve-favicon": "~2.4.5",
-    "underscore": "latest",
-    "underscore.string": "^3.3.5"
+	"@fortawesome/fontawesome-free": "^5.8.2",
+	"bluebird": "^3.5.1",
+	"body-parser": "~1.18.2",
+	"bootstrap": "^4.3.1",
+	"cookie-parser": "~1.4.3",
+	"debug": "~2.6.9",
+	"express": "^4.16.4",
+	"express-hbs": "^1.0.4",
+	"express-session": "^1.15.6",
+	"handlebars-helpers": "^0.10.0",
+	"handlebars-intl": "^1.1.2",
+	"jquery": "^3.4.1",
+	"morgan": "~1.9.0",
+	"node-sass": "^4.12.0",
+	"node-sass-middleware": "^0.11.0",
+	"nodemailer": "^6.2.1",
+	"popper.js": "^1.14.7",
+	"serve-favicon": "~2.4.5",
+	"underscore": "^1.9.1",
+	"underscore.string": "^3.3.5"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+	"nodemon": "^1.11.0"
   }
 }
