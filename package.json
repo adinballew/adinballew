@@ -24,7 +24,7 @@
 	"nodemailer": "^6.2.1",
 	"popper.js": "^1.14.7",
 	"serve-favicon": "~2.4.5",
-	"underscore": "^1.9.1",
+	"underscore": "^1.12.1",
 	"underscore.string": "^3.3.5"
   },
   "devDependencies": {
